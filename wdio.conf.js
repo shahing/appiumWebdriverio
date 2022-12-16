@@ -55,10 +55,7 @@ exports.config = {
       platformName: "Android",
       "appium:deviceName": "Pixel 3",
       "appium:automationName": "UIAutomator2",
-      "appium:app": path.join(
-        process.cwd(),
-        "app/android/Random_v8.0_apkpure.com.apk"
-      ),
+      "appium:app": path.join(process.cwd(), "app/android/demo.apk"),
       "appium:appPackage": "com.vasilchenko.randomfree",
       "appium:appWaitActivity": "com.vasilchenko.randomfree.MenuActivity",
       "appium:noReset": true,
