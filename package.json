@@ -4,8 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "wdio": "wdio run ./wdio.conf.js"
+    "test": "source ~/.bash_profile && npx wdio",
+    "wdio": "wdio run ./wdio.conf.js",
+    "install:driver": "npx appium driver install uiautomator2",
+    "appium:server": "appium -p 4724",
+    "wdioIOS": "wdio run config/wdio-ios.conf.js",
+    "wdioAndroid": "wdio run config/wdio-android.conf.js"
   },
   "repository": {
     "type": "git",

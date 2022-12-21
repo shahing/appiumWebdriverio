@@ -1,0 +1,14 @@
+describe("First test", () => {
+  it("Find an elmenet by class name ", async () => {
+    const generateNumber = await $("android.widget.Button");
+    //assertion
+    await expect(generateNumber).toHaveText("GENERATE NUMBER");
+    await generateNumber.click();
+  });
+
+  it("Verify the navigation to next screen while click on a button", async () => {
+    const generateBtn = await $("id:com.vasilchenko.randomfree:id/btn");
+
+    await expect(generateBtn).toHaveText("GENERATE");
+  });
+});
