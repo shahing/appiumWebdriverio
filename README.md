@@ -238,8 +238,6 @@ appium driver list
 To run android app : npm run wdioAndroid
 ```
 
-To run ios app : npm run wdioIOS
-
 ```
-
+To run ios app : npm run wdioIOS
 ```
