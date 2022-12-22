@@ -234,6 +234,19 @@ Check the installed drivers using
 appium driver list
 ```
 
+Setup WebDriverIO
+if you want to run this project:
+
+1- Install all the system requirements
+
+2- Clone the project
+
+3- Run: npm i
+
+4- Download the android app and place it under app/android or app/IOS
+
+5- npm run wdioIOS/wdioAndroid
+
 ```
 To run android app : npm run wdioAndroid
 ```
