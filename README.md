@@ -234,5 +234,12 @@ Check the installed drivers using
 appium driver list
 ```
 
+```
 To run android app : npm run wdioAndroid
+```
+
 To run ios app : npm run wdioIOS
+
+```
+
+```
