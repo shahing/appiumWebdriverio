@@ -23,7 +23,10 @@ exports.config = {
   // then the current working directory is where your `package.json` resides, so `wdio`
   // will be called from there.
   //
-  specs: ["../test/specs/**/*.js"],
+
+  specs: [
+    '../test/specs/test.e2e.js'
+],
   // Patterns to exclude.
   exclude: [
     // 'path/to/excluded/files'
@@ -50,21 +53,15 @@ exports.config = {
   // Sauce Labs platform configurator - a great tool to configure your capabilities:
   // https://saucelabs.com/platform/platform-configurator
   //
-  capabilities: [
-    {
-      platformName: "Android",
-      "appium:deviceName": "Pixel 3",
-      "appium:automationName": "UIAutomator2",
-      "appium:app": path.join(
-        process.cwd(),
-        "app/android/Costa Coffee Club_4.40.1_Apkpure.apk"
-      ),
-      "appium:appPackage": "uk.co.club.costa.costa",
-      "appium:appWaitActivity":
-        "uk.co.costa.welcomemodule.splash.SplashActivity",
-      // "appium:noReset": true,
-    },
-  ],
+
+  capabilities: [{
+    // capabilities for local Appium web tests on an Android Emulator
+    platformName: 'Android',
+    "appium:automationName": "UIAutomator2",
+    'appium:app': 'app/UKTV/app-production-rel-11.0.4.apk',
+    'appium:deviceName': 'Pixel 6',
+    'appium:fullReset': false,
+}],
   //
   // ===================
   // Test Configurations
