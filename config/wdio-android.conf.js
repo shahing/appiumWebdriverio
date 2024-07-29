@@ -59,7 +59,7 @@ exports.config = {
     platformName: 'Android',
     "appium:automationName": "UIAutomator2",
     'appium:app': 'app/UKTV/app-production-rel-11.0.4.apk',
-    'appium:deviceName': 'Pixel 6',
+    'appium:deviceName': 'emulator-5554',
     'appium:fullReset': false,
 }],
   //
